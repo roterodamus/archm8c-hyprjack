@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # Initialize variables
-soundcard1="PCH"  # Set your soundcard name
-soundcard2="M8"
-samplerate="44100"                # Set your desired sample rate
+soundcard1="PCH"                  # Set your soundcard name
 buffersize="128"                  # Set your desired buffer size
-period="4"                        # Set your desired period
+soundcard2="M8"
+samplerate="44100"                
+period="4"                        
 
 # Start JACK server
 jackd -d alsa -d hw:"$soundcard1" -r "$samplerate" -p "$buffersize" &
