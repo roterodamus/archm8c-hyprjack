@@ -9,6 +9,9 @@ sudo usermod -aG audio,uucp "$USERNAME"
 # Install the required packages
 sudo pacman -S --noconfirm libserialport sdl3 gcc pkgconf make git hyprland kitty dolphin wofi brightnessctl swaybg alsa-utils jack2 jack-example-tools linux-headers xf86-input-libinput libinput xpad
 
+# Make laucher script executable
+chmod +x jack-m8c.sh
+
 # Download and install m8c (with patch for now)
 git clone https://github.com/laamaa/m8c.git
 patch < inprint2_patch.diff m8c/src/inprint2.c
