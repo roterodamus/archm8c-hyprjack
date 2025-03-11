@@ -14,7 +14,7 @@ chmod +x jack-m8c.sh
 
 # Download and install m8c (with patch for now)
 git clone https://github.com/laamaa/m8c.git
-patch < inprint2_patch.diff m8c/src/inprint2.c
+# patch < inprint2_patch.diff m8c/src/inprint2.c
 cd m8c
 make
 sudo make install
