@@ -7,7 +7,7 @@ USERNAME="$USER"
 sudo usermod -aG audio,uucp "$USERNAME"
 
 # Install the required packages
-sudo pacman -S --noconfirm --needed libserialport sdl3 gcc pkgconf make git hyprland kitty dolphin wofi brightnessctl swaybg alsa-utils jack2 jack-example-tools linux-headers xf86-input-libinput libinput xpad
+sudo pacman -S --noconfirm --needed libserialport sdl3 gcc pkgconf make git hyprland kitty dolphin wofi nano brightnessctl swaybg alsa-utils a2jmidid jack2 jack-example-tools linux-headers xf86-input-libinput libinput xpad
 
 # Make laucher script executable
 chmod +x jack-m8c.sh
