@@ -1,7 +1,7 @@
-# ArchM8C-HyprJack: A Simple Bash Script for a Dirtywave M8 Console
+# ArchM8C-HyprJack: A Simple Script for a Dirtywave M8 Console on archlinux with jack and midi.
 
-This repository has a simple Bash script that turns your (old)computer into an "M8C Console" for the Dirtywave M8 or the Dirtywave M8 Headless. 
-It uses Jack as audio server and sets up the right audio in- and outputs and MIDI connection. It also uses Hyprland to show a floating window of M8C in the center of the screen with a nice background.
+This repository has a simple script that turns your (old)computer into an "M8C Console" for the Dirtywave M8 or the Dirtywave M8 Headless. 
+It uses Jack as audio server and sets up the right audio in- and outputs and MIDI connection. It also uses Hyprland to show a floating tranparent window of M8C in the center of the screen with a nice wallpaper.
 
 
 ## Prerequisites
