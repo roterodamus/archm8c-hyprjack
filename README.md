@@ -53,7 +53,7 @@ Install Arch Linux using the `archinstall` script for simplicity.
    ```
    
 
-## Basic Keybindings Overview
+## Basic hyprland Keybindings Overview
 
 **SUPER = WindowsKey or similar**
 
