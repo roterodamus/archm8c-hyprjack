@@ -6,7 +6,7 @@ It uses Jack as audio server and sets up the right audio and MIDI connections. I
 
 ## Prerequisites
 
-This script is designed for use on a fresh Arch minimal Linux system with the following requirements:
+This script is designed for use on a fresh minimal Arch Linux system with the following requirements:
 
 - An active internet connection
 - A user account with sudo privileges
@@ -53,6 +53,20 @@ Install Arch Linux using the `archinstall` script for simplicity.
    ```
    
 
+## Basic Keybindings Overview
+
+**SUPER = WindowsKey or similar**
+
+- **Launch Terminal**: `SUPER + Q` 
+- **Kill Active Window**: `SUPER + C`
+- **Launch File Manager**: `SUPER + E`
+- **Open Menu**: `SUPER + SPACE`
+
+- **Switch to Workspace**: 
+  - `SUPER + 1 - 0` → `workspace 1 - 10`
+  
+- **Move to Workspace** (Shift):
+  - `SUPER + SHIFT + 1 - 0` → `movetoworkspace 1 - 10`
 ## A very special thanks to:
 
 - Trash80 - [Dirtywave](https://dirtywave.com/)
