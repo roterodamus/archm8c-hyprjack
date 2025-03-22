@@ -49,7 +49,7 @@ Install Arch Linux using the `archinstall` script for simplicity.
 
 1. wip:
    ```bash
-   wip
+   tba
    ```
    
 
@@ -61,12 +61,9 @@ Install Arch Linux using the `archinstall` script for simplicity.
 - **Kill Active Window**: `SUPER + C`
 - **Launch File Manager**: `SUPER + E`
 - **Open Menu**: `SUPER + SPACE`
+- **Switch to Workspace 1 - 10**: `SUPER + 1 - 0`
+- **Move to Workspace 1 - 10**: `SUPER + SHIFT + 1 - 0`
 
-- **Switch to Workspace**: 
-  - `SUPER + 1 - 0` → `workspace 1 - 10`
-  
-- **Move to Workspace** (Shift):
-  - `SUPER + SHIFT + 1 - 0` → `movetoworkspace 1 - 10`
 ## A very special thanks to:
 
 - Trash80 - [Dirtywave](https://dirtywave.com/)
