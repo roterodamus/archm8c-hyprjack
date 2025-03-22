@@ -1,7 +1,7 @@
 # ArchM8C-HyprJack: A Simple Bash Script for a Dirtywave M8 Console
 
 This repository has a simple Bash script that turns your (old)computer into an "M8C Console" for the Dirtywave M8 or the Dirtywave M8 Headless. 
-It uses Jack as audio server and sets up the right audio and MIDI connections. It also uses Hyprland to show a floating window of M8C in the center of the screen with a nice background.
+It uses Jack as audio server and sets up the right audio in- and outputs and MIDI connection. It also uses Hyprland to show a floating window of M8C in the center of the screen with a nice background.
 
 
 ## Prerequisites
@@ -47,11 +47,38 @@ Install Arch Linux using the `archinstall` script for simplicity.
    ```
 ## Post install
 
-1. wip:
-   ```bash
-   tba
-   ```
-   
+### After installation, you'll need to set your sound card and MIDI in the jack-m8c.sh script. 
+
+Find the name of the sound card you want to use, usually something like PCM, USB, or CODEC.  
+Make a note of it. 
+ ```bash
+aplay -l
+ ```
+ Now do the same for your MIDI controller. Find it and make note of it.
+ ```bash
+aconnect -l
+ ``` 
+ Open the jack-m8c.sh script.
+ At the top of the script, replace "USB" with the name of your sound card and replace "SINCO" with the name of your MIDI controller. 
+ ```bash
+nano archm8c-hyperjack/jack-m8c.sh  
+ ```
+ 
+
+Press `Ctrl + O` to save changes.  
+Press `Ctrl + X` to exit nano.
+
+### you might want to modify the hyprland config if your monitor resolution is not 1920 x 1080.
+at the bottom of the script you can uncomment the option for your matching resolution.
+In this script you can also set a different wallpaper, or set up hyprland however you want.
+
+ ```bash
+nano .config/hypr/hyprland.conf
+ ```
+Press `Ctrl + O` to save changes.  
+Press `Ctrl + X` to exit nano.
+
+### Finally reboot to apply all settings
 
 ## Basic hyprland Keybindings Overview
 
