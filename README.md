@@ -7,6 +7,7 @@ It uses Jack as audio server and sets up the right audio in- and outputs and MID
 
 This script is designed for use on a fresh minimal Arch Linux system with the following requirements:
 
+- A Dirtywave M8 or a teensy with M8 headless installed
 - An active internet connection
 - A user account with sudo privileges
 - Git
