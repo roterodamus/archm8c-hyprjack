@@ -7,12 +7,14 @@ It uses Jack as audio server and sets up the right audio in- and outputs and MID
 
 This script is designed for use on a fresh minimal Arch Linux system with the following requirements:
 
-- A Dirtywave M8 or a teensy with M8 headless installed
 - An active internet connection
 - A user account with sudo privileges
 - Git
 
-Install Arch Linux using the `archinstall` script for simplicity.
+You also need a [Dirtywave M8](https://dirtywave.com/products/m8-tracker-model-02) or a teensy 4.1 with [M8 headless](https://github.com/Dirtywave/M8HeadlessFirmware) installed
+
+
+### Install Arch Linux using the `archinstall` script for simplicity.
 
 >1. Select your local mirror location.
 >2. Enter disk configuration, use best effort on your desired drive and select ext4 filesystem.
