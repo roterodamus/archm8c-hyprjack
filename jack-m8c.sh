@@ -25,7 +25,7 @@ else
   alsa_in -j "${soundcard1}_in" -d hw:"$soundcard1",DEV=0 -r "$samplerate" -p "$buffersize" -n "$period" -c 2 &
   alsa_out -j "${soundcard1}_out" -d hw:"$soundcard1",DEV=0 -r "$samplerate" -p "$buffersize" -n "$period" -c 2 &
 
-  sleep 4
+  sleep 1
 
   jack_connect "${soundcard1}_in:capture_1" system:playback_1
   jack_connect "${soundcard1}_in:capture_2" system:playback_2
@@ -35,7 +35,7 @@ fi
 alsa_in -j "${soundcard2}_in" -d hw:"$soundcard2",DEV=0 -r "$samplerate" -p "$buffersize" -n "$period" -c 2 &
 alsa_out -j "${soundcard2}_out" -d hw:"$soundcard2",DEV=0 -r "$samplerate" -p "$buffersize" -n "$period" -c 2 &
 
-sleep 4
+sleep 1
 
 jack_connect "$soundcard2"_in:capture_1 system:playback_1
 jack_connect "$soundcard2"_in:capture_2 system:playback_2
@@ -46,7 +46,7 @@ jack_connect system:capture_2 "$soundcard2"_out:playback_2
 # MIDI setup
 # Start a2jmidid to bridge ALSA MIDI to JACK MIDI
 a2jmidid -e &
-sleep 2
+sleep 1
 
 # Connect MIDI controller to M8 if variables are set
 if [ -n "$midi_controller" ] && [ -n "$m8_midi" ]; then
