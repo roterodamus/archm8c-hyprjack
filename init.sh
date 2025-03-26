@@ -7,7 +7,7 @@ USERNAME="$USER"
 sudo usermod -aG audio,uucp "$USERNAME"
 
 # Install the required packages
-sudo pacman -Syu --noconfirm --needed libserialport sdl3 gcc pkgconf make git hyprland kitty dolphin wofi nano brightnessctl swaybg alsa-utils a2jmidid jack2 jack-example-tools linux-headers xf86-input-libinput libinput xpad
+sudo pacman -Syu --noconfirm --needed libserialport sdl3 gcc pkgconf make git hyprland kitty dolphin wofi nano brightnessctl swaybg alsa-utils a2jmidid jack2 jack-example-tools linux-headers xf86-input-libinput libinput xpad bluez bluez-utils blueberry
 
 # Make laucher script executable
 chmod +x jack-m8c.sh
@@ -20,7 +20,15 @@ make
 sudo make install
 cd ..
 
-# Load the xpad module
+# download and install bluetooth autoconnect
+git clone https://aur.archlinux.org/bluetooth-autoconnect.git
+cd bluetooth-autoconnect/
+makepkg -si
+cd ..
+
+# enable bluetooth services & Load the xpad module
+sudo systemctl enable bluetooth.service
+sudo systemctl enable bluetooth-autoconnect
 sudo modprobe xpad
 
 # Append limits to /etc/security/limits.conf
