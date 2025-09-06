@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # Initialize variables
-soundcard1="USB"             # Set your soundcard name (aplay -l)
+soundcard1="PCH"             # Set your soundcard name (aplay -l)
 midi_controller="SINCO"      # Set your MIDI controller's ALSA name (aconnect -l)
 buffersize="128"             # Set your desired buffer size
 soundcard2="M8"
 m8_midi="M8"
 samplerate="44100"
-period="4"
+period="16"
 
 # Start JACK server
 jackd -d alsa -d hw:"$soundcard1" -r "$samplerate" -p "$buffersize" &
