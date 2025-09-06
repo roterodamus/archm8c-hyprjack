@@ -57,13 +57,10 @@ sudo mkdir -p /etc/systemd/system/getty@tty1.service.d/
 } >> "$HOME/.bash_profile"
 
 # Copy the hyprland.conf file to the .config/hypr/ directory
-if [ -f "./hyprland.conf" ]; then
-    echo "Found hyprland.conf, proceeding to copy."
-    mkdir -p "$HOME/.config/hypr"
-    cp "./hyprland.conf" "$HOME/.config/hypr/" || echo "Failed to copy hyprland.conf"
-else
-    echo "hyprland.conf file not found in the script directory."
-fi
+mkdir -p "$HOME/.config/hypr"
+mkdir -p "$HOME/.config/sway"
+cp "./hyprland.conf" "$HOME/.config/hypr/"
+cp "./config" "$HOME/.config/sway/"
 
 # Create the directory for gamecontrollerdb if it doesn't exist
 mkdir -p "$HOME/.local/share/m8c/"
