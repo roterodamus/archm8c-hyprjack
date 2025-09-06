@@ -1,0 +1,10 @@
+output * transform 0
+
+seat * hide_cursor 100
+
+exec_always --no-startup-id env WLR_NO_HARDWARE_CURSORS=1 ~/archm8c-hyprjack/jack-m8c.sh
+
+for_window [app_id="m8c"] fullscreen enable
+for_window [app_id="m8c"] border none
+for_window [class="m8c"] fullscreen enable
+for_window [class="m8c"] border none
