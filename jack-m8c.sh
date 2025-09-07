@@ -3,7 +3,7 @@
 # Initialize variables
 soundcard1="PCH"             # Set your soundcard name (aplay -l)
 midi_controller="SINCO"      # Set your MIDI controller's ALSA name (aconnect -l)
-buffersize="128"             # Set your desired buffer size
+buffersize="256"             # Set your desired buffer size
 soundcard2="M8"
 m8_midi="M8"
 samplerate="44100"
