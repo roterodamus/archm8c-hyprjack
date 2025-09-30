@@ -50,7 +50,7 @@ fi
 sudo usermod -aG audio,uucp "$USERNAME"
 
 # Install the required packages
-sudo yay -Syu --noconfirm --needed swayfx brightnessctl nano helix alsa-utils a2jmidid jack2 jack-example-tools linux-headers xf86-input-libinput libinput xpad bluez bluez-utils \
+yay -Syu --noconfirm --needed swayfx brightnessctl nano helix alsa-utils a2jmidid jack2 jack-example-tools linux-headers xf86-input-libinput libinput xpad bluez bluez-utils \
 foot dolphin dmenu blueberry m8c bluetooth-autoconnect greetd greetd-tuigreet
 
 # Make laucher script executable
